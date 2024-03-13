@@ -40,7 +40,7 @@ public class GameManage : MonoBehaviour
     {
         DisplayMoney(0);
 
-        //player Starting Pos
+        //set fixed position position player at start for camera
         playerController.transform.position = new Vector2(-16.83999f, -6.945016f);
         yield return 0.2f;
         postProcessVolume.profile.TryGetSettings<AutoExposure>(out autoExposure);
